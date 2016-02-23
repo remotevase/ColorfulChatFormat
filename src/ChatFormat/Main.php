@@ -16,7 +16,6 @@ class Main extends PluginBase implements Listener{
 		$this->config = new Config($this->getDataFolder(). "config.yml", Config::YAML, array
 		
 		(
-			# IMPORTANT: Color is for the Color Format for Chat. Make sure to write a color Recognized by Pocketmine-MP!
 			
 			"Owner" => "Taki21", 
 			
