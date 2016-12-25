@@ -1,6 +1,6 @@
 <?php
 
-namespace Taki21\ChatFormat;
+namespace ChatFormat;
 
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\event\Listener;
