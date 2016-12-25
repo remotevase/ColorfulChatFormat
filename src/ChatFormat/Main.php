@@ -17,43 +17,43 @@ class Main extends PluginBase implements Listener{
 		
 		(
 			
-			"Owner" => "Taki21", 
+			"Owner" => "masteremotevase", 
 			
-			"Co-Owner" => "Steve",
+			"Co-Owner" => "mariobrostech",
 			
-			"Co-Owner2" => "Jeb",
+			"Co-Owner2" => "MECEYECE",
 			
-			"Co-Owner3" => "Notch",
+			"Co-Owner3" => "MOIUHWIRUGEGAKGDLIWGLIFUGHDLUGFLUHDLIUGIFUGHDLIUHLIFU",
 			
-			"Builder" => "Taki",
+			"Builder" => "ThDragonRing",
 			
-			"Plugin-Dev" => "Alex",
+			"Plugin-Dev" => "Ad5001",
 			
-			"Plugin-Dev1" => "DanTDM",
+			"Plugin-Dev1" => "THALHTILUUIAGRWLIHEIHTUIHWEILGTIUHEILWAHIUTGIHAE",
 			
-			"Head-Admin" => "ExplodingTNT",
+			"Head-Admin" => "Taki21",
 			
-			"Admin" => "Player1",
+			"Admin" => "Player11123",
 			
-			"Admin1" => "Player2",
+			"Admin1" => "Player1422222222",
 			
-			"Admin2" => "Player3",
+			"Admin2" => "Player1422222222223",
 			
-			"Admin3" => "Player4",
+			"Admin3" => "Player41422222222",
 			
-			"Admin4" => "Player5",
+			"Admin4" => "Player142222222225",
 			
-			"Admin5" => "Player6",
+			"Admin5" => "Player142222222222226",
 			
-			"Admin6" => "Player7",
+			"Admin6" => "Player124444444444447",
 			
-			"Admin7" => "Player8",
+			"Admin7" => "Player14222222222222228",
 			
-			"Admin8" => "Player9",
+			"Admin8" => "Player2142222222222222222229",
 			
-			"Admin9" => "Player10",
+			"Admin9" => "Player1142222222222222220",
 			
-			"Regular_Players_Format" => "USER",
+			"Regular_Players_Format" => "",
 		));
 		$this->config->save();
 	}
@@ -62,60 +62,60 @@ class Main extends PluginBase implements Listener{
 		$name = $pl->getName();
 		$msg = $event->getMessage();
 		if($name == "".$this->config->get("Owner").""){
-			$event->setFormat("[".C::AQUA."Owner: $name] $msg");
+			$event->setFormat("[".C::GOLD."Owner: $name] $msg");
 		}else{
 			if($name == "".$this->config->get("Co-Owner").""){
-				$event->setFormat("[".C::GREEN."Co-Owner $name] $msg");
+				$event->setFormat("[".C::AQUA."Co-".C::RED."Owner".C::WHITE.": $name".C::RESET."] $msg");
 			}else{
 				if($name == "".$this->config->get("Co-Owner2").""){
-					$event->setFormat("[".C::RED."Co-Owner: $name] $msg");
+					$event->setFormat("[".C::AQUA."Co-".C::RED."Owner".C::WHITE.": $name".C::RESET."] $msg");
 				}else{
 					if($name == "".$this->config->get("Co-Owner3").""){
-						$event->setFormat("[".C::AQUA."Co-".C::RED."Owner".C::WHITE.": $name] $msg");
+						$event->setFormat("[".C::AQUA."Co-".C::RED."Owner".C::WHITE.": $name".C::RESET."] $msg");
 					}else{
 						if($name == "".$this->config->get("Builder").""){
-							$event->setFormat("[".C::YELLOW."Builder(OP): $name] $msg");
+							$event->setFormat("[".C::YELLOW."Head Builder: $name".C::RESET."] $msg");
 						}else{
 							if($name == "".$this->config->get("Plugin-Dev").""){
-								$event->setFormat("[".C::DARK_RED."Plugin-Dev(OP): $name] $msg");
+								$event->setFormat("[".C::DARK_RED."Head Developer: $name".C::RESET."] $msg");
 							}else{
 								if($name == "".$this->config->get("Plugin-Dev1").""){
-									$event->setFormat("[".C::GOLD."Plugin-Dev(OP): $name] $msg");
+									$event->setFormat("[".C::DARK_RED."Other Developer: $name".C::RESET."] $msg");
 								}else{
 									if($name == "".$this->config->get("Head-Admin").""){
-										$event->setFormat("[".C::GREEN."Head-Admin: $name] $msg");
+										$event->setFormat("[".C::GREEN."Head Administrator: $name".C::RESET."] $msg");
 									}else{
 										if($name == "".$this->config->get("Admin").""){
-											$event->setFormat("[".C::DARK_AQUA."Admin: $name] $msg");
+											$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 										}else{
 											if($name == "".$this->config->get("Admin1").""){
-												$event->setFormat("[".C::RED."Admin: $name] $msg");
+												$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 											}else{
 												if($name == "".$this->config->get("Admin2").""){
-													$event->setFormat("[".C::YELLOW."Admin: $name] $msg");
+													$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 												}else{
 													if($name == "".$this->config->get("Admin3").""){
-														$event->setFormat("[".C::GOLD."Admin:".C::GOLD." $name] $msg");
+														$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 													}else{
 														if($name == "".$this->config->get("Admin4").""){
-															$event->setFormat("[".C::RED."Admin:".C::GOLD." $name] $msg");
+															$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 														}else{
 															if($name == "".$this->config->get("Admin5").""){
-																$event->setFormat("[".C::DARK_AQUA."Admin: $name] $msg");
+																$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 															}else{
 																if($name == "".$this->config->get("Admin6").""){
-																	$event->setFormat("[".C::DARK_RED."Admin: $name] $msg");
+																	$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 																}else{
 																	if($name == "".$this->config->get("Admin7").""){
-																		$event->setFormat("[".C::YELLOW."Admin: $name] $msg");
+																		$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 																	}else{
 																		if($name == "".$this->config->get("Admin8").""){
-																			$event->setFormat("[".C::BLUE."Admin: $name] $msg");
+																			$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 																		}else{
 																			if($name == "".$this->config->get("Admin9").""){
-																				$event->setFormat("[".C::GREEN."Admin: $name] $msg");
+																				$event->setFormat("[".C::GREEN."Administrator: $name".C::RESET."] $msg");
 																			}else{
-																				$event->setFormat("[".C::GOLD.$this->config->get("Regular_Players_Format").": $name] $msg");
+																				$event->setFormat("[".C::DARK_BLUE."$name".C::RESET."] $msg");
 																			}
 																		}
 																	}
