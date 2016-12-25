@@ -1,5 +1,5 @@
 name: ChatFormat
-api: [1.12.0, 1.13.0]
+api: [2.0.0, 3.0.0]
 version: 0.0.1
-main: Taki21\ChatFormat\Main
-author: Taki21
+main: ChatFormat\Main
+author: remote_vase
